@@ -98,7 +98,7 @@ app.layout = html.Div(children=[
                                                           ],
                                                           placeholder='Select A Report Type',
                                                           style={'width': '80%', 'padding': '3px', 'font-size': '20px', 'textAlign': 'center'}),
-                                                  ])    
+                                                     
                                     # Place them next to each other using the division style
                                     ], style={'display':'flex'}),
                                     
@@ -132,7 +132,7 @@ app.layout = html.Div(children=[
                                 # Enter your code below. Make sure you have correct formatting.
                                 html.Div([
                                         html.Div([ ], id='plot4'),
-                                        html.Div([ ]), id='plot5')
+                                        html.Div([ ], id='plot5')
                                 ], style={'display': 'flex'}),
 
                                 ])
@@ -140,7 +140,7 @@ app.layout = html.Div(children=[
 # Callback function definition
 # TASK4: Add 5 ouput components
 # Enter your code below. Make sure you have correct formatting.
-@app.callback( [[Output(component_id='plot1', component_property='children'),
+@app.callback( [Output(component_id='plot1', component_property='children'),
                 Output(component_id='plot2', component_property='children'),
                 Output(component_id='plot3', component_property='children'),
                 Output(component_id='plot4', component_property='children'),
